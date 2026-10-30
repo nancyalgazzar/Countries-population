@@ -8,7 +8,7 @@ const searchForm = document.querySelector(".search-container");
 
 async function  getdata(region){
     let url = "https://countries.dev/countries";
-    if(typeof(region)=='string'){
+    if(typeof(region)=='string'&& region.trim().toLocaleLowerCase()!='all'){
         url="https://countries.dev/region/"+region;
     }
     try {
@@ -132,7 +132,7 @@ async function search(){
         content.append(error); 
     }}
         else{
-            getdata();
+            getdata(document.querySelector(".selected").innerHTML);
         }
 }
 
