@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h2>🌐 Countries</h2>
+      <div class="nav">
+        <a class="bold">Explore</a>
+        <a>Compare</a>
+        <a href="https://countries.dev/">API</a>
+      </div>
+      <div onclick="shownav()" class="burger">
+        <hr>
+        <hr>
+        <hr>
+      </div>
+     
+    </header>
+     <aside class="sidebar">
+        <a class="bold">Explore</a>
+        <a>Compare</a>
+        <a href="https://countries.dev/">API</a>
+     </aside>
+    <main>
+      <h1>Explore countries</h1>
+      <div class="row">
+        <p>
+          Capitals, populations, currencies and languages for every country.
+        </p>
+        <form class="search-container">
+          <p>🔍</p>
+          <input class="search" placeholder="Search by name or capital" />
+        </form>
+      </div>
+      <div class="Countries-container">
+        <button class="country selected">All</button>
+        <button class="country">Africa</button>
+        <button class="country">Americas</button>
+        <button class="country">Asia</button>
+        <button class="country">Europe</button>
+        <button class="country">Oceania</button>
+      </div>
+
+      <div class="content"></div>
+    </main>
+    <footer>
+      <p class="footer-text">Data from the Countries API</p>
+    </footer>
+  </body>
+</html>
